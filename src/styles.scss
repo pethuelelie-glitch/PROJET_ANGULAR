@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/scss/preload';
+@import 'styles/scss/mono';
+@import 'styles/scss/responsive';
+@import 'styles/scss/light.theme';
+@import 'styles/scss/blue';
+
+/* On cache le voile d'attente tant que les images externes ne sont pas remplacées */
+#preloader {
+  display: none !important;
+}
+
+/* Les composants Angular se comportent comme des blocs */
+app-header, app-hero, app-about, app-facts, app-services, app-video,
+app-portfolio, app-project, app-resume, app-testimonial, app-blog,
+app-contact, app-footer {
+  display: block;
+}
